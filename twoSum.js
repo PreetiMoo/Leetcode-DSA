@@ -3,9 +3,10 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.*/
 
 
-myMap = {}
+
 
 var twoSum = function(nums, target) {
+    myMap = {}
     for(let i = 0; i<nums.length; i++){
             if(target-nums[i] in myMap){
                 if(myMap[target-nums[i]] != i){
