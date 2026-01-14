@@ -38,7 +38,7 @@ var searchInsert = function(nums, target) {
         let mid = Math.floor((left + right) / 2);
 
         if (nums[mid] === target) {
-            return mid; // target found
+            return mid; 
         } else if (nums[mid] < target) {
             left = mid + 1;
         } else {
@@ -46,6 +46,5 @@ var searchInsert = function(nums, target) {
         }
     }
 
-    // left is the insertion position
     return left;
 };
